@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "license": "MIT",
   "dependencies": {
     "@adminjs/express": "^6.0.0",

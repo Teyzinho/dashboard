@@ -1,0 +1,5 @@
+Criação model User
+npx sequelize-cli model:generate --name User --attributes name:string,email:string,password_hash:string
+
+migrate do bando de dados
+npx sequelize-cli db:migrate
