@@ -39,6 +39,7 @@ class User extends Model {
   // Método estático para definir associações com outros modelos
   static associate(models) {
     //Assiciações
+    this.hasMany(models.Project)
   }
 }
 
