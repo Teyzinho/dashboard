@@ -2,8 +2,8 @@
   "name": "dashboard",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "@adminjs/express": "^6.0.0",
     "@adminjs/sequelize": "^4.0.0",
@@ -12,6 +12,7 @@
     "express": "^4.18.2",
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.3",
+    "node-fetch": "^3.3.2",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.32.1",
@@ -23,7 +24,9 @@
     "sucrase": "^3.34.0"
   },
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:undo": "sequelize-cli db:migrate:undo"
   },
   "repository": "https://github.com/Teyzinho/dashboard.git",
   "author": "Thiago <teyextreme@outlook.com>"
